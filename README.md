@@ -27,8 +27,10 @@ allprojects {
 #### 2、效果展示
 ![首页展示](img/WX20200119-104612@2x.png)
 ![assets展示](https://github.com/liujianguangnice/LottieDemo/blob/master/img/WX20200119-105922@2x.png)
+
 ![gif展示](img/gif/shili.gif)
 #### 3、核心代码
+##### activity:
 ```Java
   private Button button1,button2;
     private TextView tv_seek;
@@ -157,4 +159,73 @@ allprojects {
     
 
 ```
+
+##### xml
     
+
+```
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="直接写在布局中的动画："/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:lottie_fileName="data.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="加载assets文件中的动画："/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view_asset_get"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_seek"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+        <Button
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:text="开始动画"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:id="@+id/button1"/>
+
+        <Button
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center"
+            android:text="暂停动画"
+            android:background="@color/colorPrimary"
+            android:id="@+id/button2"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载网络中的动画："
+        android:layout_marginTop="20dp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view_net_get"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+
+```
