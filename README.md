@@ -25,9 +25,9 @@ allprojects {
 ```
 
 #### 2、效果展示
-![gif展示](img/gif/shili.gif)
 ![首页展示](img/WX20200119-104612@2x.png)
 ![assets展示](https://github.com/liujianguangnice/LottieDemo/blob/master/img/WX20200119-105922@2x.png)
+![gif展示](img/gif/shili.gif)
 #### 3、核心代码
 ```Java
   private Button button1,button2;
