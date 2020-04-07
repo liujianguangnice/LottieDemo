@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private final String TAG = this.getClass().getSimpleName();
     private Button button1,button2;
     private TextView tv_seek;
-    LottieAnimationView animation_view_assets;
+    LottieAnimationView animation_view_assets,animation_view_assetsTest,animation_view_assetsTestTest;
     LottieAnimationView animation_view_net_get;
     private Bitmap image;
 
@@ -47,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        animation_view_assetsTestTest =(LottieAnimationView)findViewById(R.id.animation_view_asset_getTestTest);
+        animation_view_assetsTestTest.playAnimation();
+
         animation_view_assets =(LottieAnimationView)findViewById(R.id.animation_view_asset_get);
         animation_view_assets.setAnimation("imagess/LottieLogo1.json");
         animation_view_assets.loop(true);
